@@ -7,11 +7,13 @@
 body {
   height: 100%;
   width: 100%;
+  font-size: 10px;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
+  border-bottom: 2px dotted #ff0043;
 }
 
 .nav {
@@ -23,6 +25,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
 }
 
 /*# list */
@@ -459,8 +462,235 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/*# */
+/*! third-sec */
+/*# */
+
+.third-sec {
+  /* background-color: crimson; */
+  height: fit-content;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-sec-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
+  height: 430px;
+  width: clamp(85%, 85vw, 1500px);
+  /* background-color: burlywood; */
+}
+
+.third-sec-main-1 {
+  /* background-color: black; */
+  margin-left: 50px;
+}
+
+.third-sec-main-2 {
+  /* background-color: aqua; */
+  height: fit-content;
+  width: 50%;
+}
+
+.third-sec-main-2 h1 {
+  font-size: clamp(3.5em, 3.2vw, 5.5em);
+  margin-bottom: 12px;
+}
+
+.third-sec-main-2 p {
+  font-size: clamp(1.4em, 1vw, 1.9em);
+  margin-bottom: 16px;
+}
+
+.third-sec-main-2 button {
+  font-size: clamp(1.4em, 0.938vw, 1.9em);
+  padding: 13px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff0043;
+  color: white;
+  text-transform: capitalize;
+}
+/*! /////////////////// */
+.footer {
+  /* background-color: #00acee; */
+  width: auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px dotted #ff0043;
+  /* background-color: red; */
+}
+
+.footer-main {
+  /* background-color: blanchedalmond; */
+  width: clamp(85%, 85vw, 1500px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.footer-main ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  /* background-color: #d62976; */
+}
+
+.footer-main ul li a {
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: clamp(14px, 20px, 40px);
+  text-transform: capitalize;
+  transition: 0.4s;
+  color: black;
+}
+
+.footer-main ul li a:hover {
+  color: #ff0043;
+  transition: 0.3s;
+}
+
+/*# Icons */
+.wrapper a {
+  color: #fff;
+}
+
+.hover {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+  line-height: 84px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background-color: #333;
+  transition: 300ms;
+}
+
+.hover-fx {
+  background-color: #d62976;
+}
+
+.hover-fx-1 {
+  background-color: #3b5998; /* Change the background color for YouTube */
+}
+.hover-fx-2 {
+  background-color: #00acee; /* Change the background color for YouTube */
+}
+
+.hover-fx-3 {
+  background-color: #ff0000; /* Change the background color for YouTube */
+}
+
+.hover-fx:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx-1:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx-2:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx-3:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.hover-fx:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px #d62976, 0px 0px 50px #d62976, 0px 0px 100px #d62976;
+}
+
+.hover-fx-1:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px #3b5998, 0px 0px 50px #3b5998, 0px 0px 100px #3b5998;
+}
+
+.hover-fx-2:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px #00acee, 0px 0px 50px #00acee, 0px 0px 100px #00acee;
+}
+
+.hover-fx-3:hover:after {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px #ff0000, 0px 0px 50px #ff0000;
+}
+/*! /////////////////// */
 /* /////////////////// */
+
+@media (1024px > width) {
+  .third-sec-main {
+    width: 100vw;
+    margin: 0;
+    gap: 25px;
+  }
+}
 /* /////////////////// */
+
 @media (800px < width <= 1290px) {
   .section-sec-dives {
     width: 100%;
@@ -489,7 +719,36 @@ body {
     width: clamp(60vmax, 39vw, 60vmin);
   }
 }
-/* /////////////////// */
+/*# /////////////////// */
+.sqb {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sqb p {
+  font-size: clamp(14px, 1.2vw, 20px);
+  margin: 10px 0;
+}
+
+/*# /////////////////// */
+
+@media (800px > width) {
+  .third-sec-main {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  .third-sec-main-2 {
+    width: calc(100% - 25px);
+    margin-left: 25px;
+  }
+  .footer-main {
+    flex-direction: column;
+  }
+}
 /* /////////////////// */
 
 @media (745px < width <= 800px) {
@@ -580,12 +839,50 @@ body {
     margin-top: 70px;
     margin-bottom: 30px;
   }
+  /*# //////////////// */
+  .footer {
+    width: 100%;
+  }
+  .footer-main {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
 }
 
 @media (width <= 495px) {
   .but button {
     font-size: clamp(2.828vw, 12px, 3.636vw);
     padding: 7px 14px;
+  }
+
+  /*# //////////////// */
+  .third-sec-main-1 {
+    display: none;
+  }
+  .third-sec-main-2 {
+    /* background-color: aqua; */
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .third-sec-main-2 h1 {
+    font-size: clamp(3.5em, 3vw, 5.5em);
+    margin-bottom: 12px;
+  }
+
+  .third-sec-main-2 p {
+    font-size: clamp(1.4em, 0.938vw, 1.9em);
+    margin-bottom: 16px;
+  }
+
+  .third-sec-main-2 button {
+    margin-left: 20px;
   }
 }
 
